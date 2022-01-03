@@ -9,7 +9,7 @@ const htmlPlugin = () => {
     transformIndexHtml (html) {
       return html.replace(
         /<title>(.*?)<\/title>/,
-        '<title>Vite TS Starter</title>'
+        '<title>Pinia TS Starter</title>'
       )
     }
   }
