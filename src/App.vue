@@ -9,7 +9,7 @@
 <script lang="ts">
 import { ElConfigProvider } from 'element-plus'
 import { useRoute, useRouter } from 'vue-router'
-import { computed, watch } from 'vue'
+import { defineComponent, computed, watch } from 'vue'
 
 import zhCn from 'element-plus/lib/locale/lang/zh-cn'
 import en from 'element-plus/lib/locale/lang/en'
@@ -44,7 +44,7 @@ const useLanguage = (store) => {
   }
 }
 
-export default {
+export default defineComponent({
   name: 'App',
   components: {
     ElConfigProvider
@@ -69,7 +69,7 @@ export default {
       ...useLanguage(store)
     }
   }
-}
+})
 </script>
 
 <style lang="sass">
