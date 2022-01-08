@@ -7,7 +7,7 @@ export function getFilterResponse(
   res: RespData,
   successCallback?: ResponseCallback | null,
   errorCallback?: ResponseCallback | null
-) {
+): Promise<RespData> {
   return new Promise((resolve) => {
     if (res && res.error === 0) {
       successCallback && successCallback(res)
