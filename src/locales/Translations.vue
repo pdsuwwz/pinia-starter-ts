@@ -7,7 +7,7 @@
     trigger="click"
     @command="handleChange"
   >
-    <span>
+    <span class="icon-outer">
       <!-- Translations<el-icon class="el-icon--right">
         <ArrowDown />
       </el-icon> -->
@@ -86,7 +86,7 @@ export default defineComponent({
   &.is-dark {
     color: #495164;
   }
-  .el-dropdown-selfdefine {
+  .icon-outer {
     display: flex;
     align-items: center;
     &:hover {
