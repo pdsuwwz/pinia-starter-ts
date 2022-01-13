@@ -5,6 +5,7 @@
       'is-dark': dark
     }"
     trigger="click"
+    popper-class="translations-box"
     @command="handleChange"
   >
     <span class="icon-outer">
@@ -22,7 +23,9 @@
           :key="index"
           :command="localeItem"
         >
-          {{ localeItem.localeName }}
+          <span class="custom-dropdown-item">
+            {{ localeItem.localeName }}
+          </span>
         </el-dropdown-item>
       </el-dropdown-menu>
     </template>
@@ -92,6 +95,9 @@ export default defineComponent({
     &:hover {
       color: $--color-primary;
     }
+  }
+  .custom-dropdown-item {
+    white-space: nowrap;
   }
 }
 </style>
