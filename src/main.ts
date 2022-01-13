@@ -22,9 +22,7 @@ app
   .use(Pinia)
 
 app
-  .use(ElementPlus, {
-    size: 'small'
-  })
+  .use(ElementPlus)
   .use(GlobalComponents)
   .use(Widgets)
   .use(Fonts)
