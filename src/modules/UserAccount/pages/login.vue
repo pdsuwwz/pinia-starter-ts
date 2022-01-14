@@ -163,7 +163,7 @@ export default defineComponent({
         const { error, data, msg } = await userAccountStore.login(formData)
         if (error) {
           inputErrorEmail.value = ' '
-          inputErrorPassword.value = msg
+          inputErrorPassword.value = msg as string
           setLoading(false)
           return
         }
