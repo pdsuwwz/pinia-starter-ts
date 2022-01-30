@@ -1,0 +1,1 @@
+import{_ as e}from"./index.f03d60de.js";import{g as a,o as r,t as n}from"./vendor.989569b5.js";const o=a({name:"XxBox"}),s={class:"xxx-container"};var v=e(o,[["render",function(d,t,c,x,f,i){return r(),n("div",s)}],["__scopeId","data-v-1cc75efd"]]);export{v as default};
