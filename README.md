@@ -11,7 +11,7 @@
 🪁  A Vue 3.x Starter template built on Vite 2.x + TypeScript + Pinia@next 🍍
 
 
-[🚀 在线体验](https://pdsuwwz.github.io/pinia-starter-ts)
+[🚀 Live Demo 在线体验](https://pdsuwwz.github.io/pinia-starter-ts)
 
 ## Environment Support
 
