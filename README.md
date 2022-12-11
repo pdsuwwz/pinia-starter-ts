@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/github/license/pdsuwwz/pinia-starter-ts?color=blue)](https://github.com/pdsuwwz/pinia-starter-ts/blob/main/LICENSE)
 
 
-🪁  A Vue 3.x Starter template built on Vite 3.x + TypeScript + Pinia@next 🍍
+🪁  A Vue 3.x Starter template built on Vite 4.x + TypeScript + Pinia@next 🍍
 
 
 [🚀 Live Demo 在线体验](https://pdsuwwz.github.io/pinia-starter-ts)
