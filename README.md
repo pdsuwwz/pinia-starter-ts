@@ -2,7 +2,7 @@
 
 
 [![Deploy](https://github.com/pdsuwwz/pinia-starter-ts/workflows/gh-pages/badge.svg)](https://github.com/pdsuwwz/pinia-starter-ts/actions/workflows/deploy.yml)
-[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/pdsuwwz/pinia-starter-ts/gh-pages/main)](https://github.com/pdsuwwz/pinia-starter-ts/deployments/activity_log?environment=github-pages)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/pdsuwwz/pinia-starter-ts/deploy.yml?branch=main)](https://github.com/pdsuwwz/pinia-starter-ts/deployments/activity_log?environment=github-pages)
 [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
 [![thanks](https://badgen.net/badge/thanks/♥/pink)](https://github.com/pdsuwwz)
 [![License](https://img.shields.io/github/license/pdsuwwz/pinia-starter-ts?color=blue)](https://github.com/pdsuwwz/pinia-starter-ts/blob/main/LICENSE)
