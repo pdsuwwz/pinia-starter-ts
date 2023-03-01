@@ -39,7 +39,7 @@ specifiers:
   lodash: ^4.17.21
   nprogress: ^0.2.0
   pinia: ^2.0.23
-  rollup: 3.17.3
+  rollup: 3.18.0
   sass: ^1.55.0
   sucrase: ^3.28.0
   ts-jest: 29.0.5
@@ -91,7 +91,7 @@ devDependencies:
   jest: 29.2.2_@types+node@18.11.7
   jest-environment-jsdom: 29.2.2
   jest-transform-stub: 2.0.0
-  rollup: 3.17.3
+  rollup: 3.18.0
   sass: 1.55.0
   sucrase: 3.28.0
   ts-jest: 29.0.5_zhtuaulwu4t7uklkd45vzjjgru
@@ -5188,8 +5188,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup/3.17.3:
-    resolution: {integrity: sha512-p5LaCXiiOL/wrOkj8djsIDFmyU9ysUxcyW+EKRLHb6TKldJzXpImjcRSR+vgo09DBdofGcOoLOsRyxxG2n5/qQ==}
+  /rollup/3.18.0:
+    resolution: {integrity: sha512-J8C6VfEBjkvYPESMQYxKHxNOh4A5a3FlP+0BETGo34HEcE4eTlgCrO2+eWzlu2a/sHs2QUkZco+wscH7jhhgWg==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -5698,7 +5698,7 @@ packages:
       esbuild: 0.16.4
       postcss: 8.4.19
       resolve: 1.22.1
-      rollup: 3.17.3
+      rollup: 3.18.0
       sass: 1.55.0
     optionalDependencies:
       fsevents: 2.3.2
