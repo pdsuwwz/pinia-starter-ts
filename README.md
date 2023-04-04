@@ -29,7 +29,7 @@
 ## Environment Support
 
 * Vue 3.2.x
-* Node >= 14.19.x
+* Node >= 16.15.x
 
 ## Install
 

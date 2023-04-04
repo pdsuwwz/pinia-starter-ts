@@ -15,7 +15,7 @@
     "test:coverage": "jest --coverage"
   },
   "engines": {
-    "node": ">= 14.19.x"
+    "node": ">= 16.15.x"
   },
   "keywords": [
     "vue",
