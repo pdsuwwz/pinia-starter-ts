@@ -42,7 +42,7 @@ specifiers:
   rollup: 3.20.2
   sass: ^1.55.0
   sucrase: ^3.28.0
-  ts-jest: 29.0.5
+  ts-jest: 29.1.0
   typescript: ^5.0.0
   vite: ^4.0.0
   vue: ^3.2.41
@@ -94,7 +94,7 @@ devDependencies:
   rollup: 3.20.2
   sass: 1.55.0
   sucrase: 3.28.0
-  ts-jest: 29.0.5_zinnl42y3qigyd5dj2meectxym
+  ts-jest: 29.1.0_zinnl42y3qigyd5dj2meectxym
   typescript: 5.0.2
   vite: 4.0.0_rmrvkutz4tttu5loknv35czto4
 
@@ -5490,8 +5490,8 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-jest/29.0.5_zinnl42y3qigyd5dj2meectxym:
-    resolution: {integrity: sha512-PL3UciSgIpQ7f6XjVOmbi96vmDHUqAyqDr8YxzopDqX3kfgYtX1cuNeBjP+L9sFXi6nzsGGA6R3fP3DDDJyrxA==}
+  /ts-jest/29.1.0_zinnl42y3qigyd5dj2meectxym:
+    resolution: {integrity: sha512-ZhNr7Z4PcYa+JjMl62ir+zPiNJfXJN6E8hSLnaUKhOgqcn8vb3e537cpkd0FuAfRK3sR1LSqM1MOhliXNgOFPA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
     peerDependencies:
@@ -5500,7 +5500,7 @@ packages:
       babel-jest: ^29.0.0
       esbuild: '*'
       jest: ^29.0.0
-      typescript: '>=4.3'
+      typescript: '>=4.3 <6'
     peerDependenciesMeta:
       '@babel/core':
         optional: true
