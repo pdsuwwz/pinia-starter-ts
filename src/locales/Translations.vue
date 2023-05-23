@@ -4,7 +4,7 @@
     :class="{
       'is-dark': dark
     }"
-    trigger="click"
+    trigger="hover"
     popper-class="translations-box"
     @command="handleChange"
   >
@@ -90,14 +90,18 @@ export default defineComponent({
   color: #fff;
   cursor: initial;
   user-select: none;
+  outline: none;
+
   &.is-dark {
     color: #495164;
   }
   .icon-outer {
     display: flex;
     align-items: center;
+    outline: none;
+
     & > * {
-      transition: .3s;
+      transition: 0.3s;
     }
     &:hover > * {
       color: $color-primary;
