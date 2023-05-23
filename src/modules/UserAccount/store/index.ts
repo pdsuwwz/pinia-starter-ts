@@ -23,7 +23,7 @@ export const useUserAccountStore = defineStore('UserAccount', {
     }
   },
   getters: {
-    demoList: state => state.demoList
+    // demoList: state => state.demoList
   },
   actions: {
     async GetModuleTestList (params) {
@@ -45,7 +45,7 @@ export const useUserAccountStore = defineStore('UserAccount', {
       this.locale = data.locale
     },
     async login (data) {
-      await sleep(1000)
+      await sleep(300)
       const res = await login(data)
       return this.filterResponse(res, null, () => {})
     },
@@ -55,7 +55,7 @@ export const useUserAccountStore = defineStore('UserAccount', {
     },
     async getUserInfo () {
       const res = await getUserInfoData()
-      await sleep(1000)
+      await sleep(200)
       return this.filterResponse(res, ({ data }) => {
         this.userInfo = data
       })
