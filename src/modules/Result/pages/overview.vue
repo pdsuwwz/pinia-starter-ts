@@ -12,7 +12,6 @@
 <script lang="ts">
 import { computed, defineComponent } from 'vue'
 
-import ResultStore from '@/modules/Result/store'
 import { useResultStore } from '@/modules/Result/store'
 
 import { useRoute } from 'vue-router'

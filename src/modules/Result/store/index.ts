@@ -30,7 +30,7 @@ export const useResultStore = defineStore('Result', {
   },
 
   actions: {
-    async getResultOverview ({ commit }, query) {
+    async getResultOverview (query) {
       // const res = await getDemoTestList(query)
       // return this.filterResponse(res, null, () => {})
       await sleep(800)
@@ -41,7 +41,7 @@ export const useResultStore = defineStore('Result', {
       }
 
       return this.filterResponse(res, ({ data }) => {
-        this.overviewData = data
+        this.overviewData = data!
       }, () => {})
     }
   }
