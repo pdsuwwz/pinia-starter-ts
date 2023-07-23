@@ -29,8 +29,13 @@
         flex-content
       >
         <template #head>
-          <SearchCorporation
+          <!-- <SearchCorporation
             @select="handleSelectSearch"
+          /> -->
+          <el-date-picker
+            :start-placeholder="_t('base.i18nTest')"
+            :end-placeholder="_t('base.i18nTest')"
+            type="datetimerange"
           />
         </template>
 
