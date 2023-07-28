@@ -86,7 +86,7 @@
     "jest": "^29.6.1",
     "jest-environment-jsdom": "^29.6.1",
     "jest-transform-stub": "^2.0.0",
-    "rollup": "3.26.3",
+    "rollup": "3.27.0",
     "sass": "^1.64.1",
     "sucrase": "^3.34.0",
     "ts-jest": "29.1.1",
