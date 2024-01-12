@@ -50,7 +50,6 @@ export default defineComponent({
         icon: 'switch-button',
         click: () => {
           Cookie.remove('token')
-          Cookie.remove('name')
           window.location.reload()
         }
       }
