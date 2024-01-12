@@ -9,8 +9,6 @@ import {
 } from '@/utils/formRules'
 import { RouteRecordRaw } from 'vue-router'
 
-import router from '@/router'
-
 // $ModalDialog
 declare module 'vue' {
   export interface VNode {
@@ -51,7 +49,6 @@ declare module 'pinia' {
    */
   export interface PiniaCustomProperties {
     filterResponse: typeof getFilterResponse
-    router: typeof router
   }
 }
 

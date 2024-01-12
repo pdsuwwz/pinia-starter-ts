@@ -31,35 +31,29 @@ router.beforeEach(async (to, from, next) => {
     return
   }
 
+  if (!Cookie.get('token')) {
+    next(`/${currentRouteLocale || userAccountStore.locale}/user/login`)
+    return
+  }
+
   // 获取用户信息
   const { data, error } = await userAccountStore.getUserInfo()
 
   if (error) {
     userAccountStore.setLanguage({
-      locale: currentRouteLocale || data.language
+      locale: currentRouteLocale || userAccountStore.locale
     })
     Cookie.remove('token')
-    Cookie.remove('name')
-    next('/en/user/login')
+    next(`/${currentRouteLocale || userAccountStore.locale}/user/login`)
     return
   }
 
-  if (data.user.username && Cookie.get('name') === data.user.username) {
-    // TODO: It must be used together with the backend
-    userAccountStore.setLanguage({
-      locale: currentRouteLocale || data.language
-    })
-    next()
-    return
-  }
-
-  // ElMessage.error('登录失败，请重新登录')
-  Cookie.remove('token')
-  Cookie.remove('name')
+  // TODO: It must be used together with the backend
   userAccountStore.setLanguage({
-    locale: currentRouteLocale || userAccountStore.locale
+    locale: currentRouteLocale || data!.language
   })
-  next(`/${currentRouteLocale || userAccountStore.locale}/user/login`)
+  next()
+
 })
 
 router.afterEach((to) => {
