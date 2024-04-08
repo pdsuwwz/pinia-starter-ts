@@ -114,7 +114,7 @@ devDependencies:
     version: 2.29.1(@typescript-eslint/parser@7.5.0)(eslint@8.57.0)
   eslint-plugin-vue:
     specifier: ^9.24.0
-    version: 9.24.0(eslint@8.57.0)
+    version: 9.24.1(eslint@8.57.0)
   identity-obj-proxy:
     specifier: ^3.0.0
     version: 3.0.0
@@ -3677,11 +3677,11 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-vue@9.24.0(eslint@8.57.0):
-    resolution: {integrity: sha512-9SkJMvF8NGMT9aQCwFc5rj8Wo1XWSMSHk36i7ZwdI614BU7sIOR28ZjuFPKp8YGymZN12BSEbiSwa7qikp+PBw==}
+  /eslint-plugin-vue@9.24.1(eslint@8.57.0):
+    resolution: {integrity: sha512-wk3SuwmS1pZdcuJlokGYEi/buDOwD6KltvhIZyOnpJ/378dcQ4zchu9PAMbbLAaydCz1iYc5AozszcOOgZIIOg==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
-      eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
+      eslint: ^6.2.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
       eslint: 8.57.0
