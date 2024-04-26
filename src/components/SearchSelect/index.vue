@@ -40,7 +40,7 @@
 </template>
 
 <script lang="ts">
-import { ComponentPublicInstance, defineComponent, getCurrentInstance, nextTick, PropType, ref, watch } from 'vue'
+import { ComponentPublicInstance, PropType, defineComponent, getCurrentInstance, nextTick, ref, watch } from 'vue'
 import { Loading } from '@element-plus/icons-vue'
 
 import { debounce } from 'lodash'
@@ -90,7 +90,7 @@ export default defineComponent({
 
     watch(
       () => searchValue,
-      debounce(function (val) {
+      debounce((val) => {
         proxy.$emit('update:modelValue', val)
         proxy.$emit('change', val)
       }, 300)

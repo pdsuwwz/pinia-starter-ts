@@ -39,7 +39,7 @@
 
 <script lang="ts">
 
-import { defineComponent, computed } from 'vue'
+import { computed, defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'IconFont',
