@@ -9,7 +9,7 @@
 <script lang="ts">
 import { ElConfigProvider } from 'element-plus'
 import { useRoute, useRouter } from 'vue-router'
-import { defineComponent, computed, watch } from 'vue'
+import { computed, defineComponent, watch } from 'vue'
 
 import { useUserAccountStore } from '@/modules/UserAccount/store'
 import { useLanguage } from '@/hooks/useLanguage'

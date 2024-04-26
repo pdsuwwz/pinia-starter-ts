@@ -31,7 +31,7 @@
         </template>
       </UserAccountContainerLayout>
     </div>
-    <Footer />
+    <CustomFooter />
   </div>
 </template>
 

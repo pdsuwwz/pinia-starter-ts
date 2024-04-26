@@ -28,7 +28,7 @@ import { defineComponent, ref } from 'vue'
 import Octocat from './octocat.vue'
 
 export default defineComponent({
-  name: 'Footer',
+  name: 'CustomFooter',
   components: {
     Octocat
   },
