@@ -65,7 +65,7 @@ importers:
         version: 9.1.1
       '@stylistic/stylelint-plugin':
         specifier: ^2.1.1
-        version: 2.1.1(stylelint@16.4.0(typescript@5.4.5))
+        version: 2.1.2(stylelint@16.4.0(typescript@5.4.5))
       '@sucrase/jest-plugin':
         specifier: ^3.0.0
         version: 3.0.0(jest@29.7.0(@types/node@20.12.7))(sucrase@3.35.0)
@@ -1211,8 +1211,8 @@ packages:
   '@sinonjs/fake-timers@10.3.0':
     resolution: {integrity: sha512-V4BG07kuYSUkTCSBHG8G8TNhM+F19jXFWnQtzj+we8DrkpSBCee9Z3Ms8yiGer/dlmhe35/Xdgyo3/0rQKg7YA==}
 
-  '@stylistic/stylelint-plugin@2.1.1':
-    resolution: {integrity: sha512-xqHTmQZN7EbnFDW7jw0rAsdFNO4IRqvXhrh3qhUlIwF/x09Zm7kgs/ADktHxsTJYcw346PpGihsB0t4pZhpeHw==}
+  '@stylistic/stylelint-plugin@2.1.2':
+    resolution: {integrity: sha512-JsSqu0Y3vsX+PBl+DwULxC0cIv9C1yIcq1MXkx7pBOGtTqU26a75I8MPYMiEYvrsXgsKLi65xVgy1iLVSZquJA==}
     engines: {node: ^18.12 || >=20.9}
     peerDependencies:
       stylelint: ^16.0.2
@@ -4797,7 +4797,7 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.1
 
-  '@stylistic/stylelint-plugin@2.1.1(stylelint@16.4.0(typescript@5.4.5))':
+  '@stylistic/stylelint-plugin@2.1.2(stylelint@16.4.0(typescript@5.4.5))':
     dependencies:
       '@csstools/css-parser-algorithms': 2.6.1(@csstools/css-tokenizer@2.2.4)
       '@csstools/css-tokenizer': 2.2.4
