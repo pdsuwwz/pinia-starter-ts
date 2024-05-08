@@ -68,7 +68,7 @@
     "@babel/core": "^7.24.5",
     "@babel/preset-env": "^7.24.5",
     "@eslint/js": "^9.2.0",
-    "@stylistic/eslint-plugin": "^1.8.1",
+    "@stylistic/eslint-plugin": "^2.0.0",
     "@stylistic/stylelint-plugin": "^2.1.2",
     "@sucrase/jest-plugin": "^3.0.0",
     "@types/jest": "^29.5.12",
