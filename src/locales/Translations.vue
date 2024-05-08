@@ -95,6 +95,7 @@ export default defineComponent({
   &.is-dark {
     color: #495164;
   }
+
   .icon-outer {
     display: flex;
     align-items: center;
@@ -103,10 +104,12 @@ export default defineComponent({
     & > * {
       transition: 0.3s;
     }
+
     &:hover > * {
       color: $color-primary;
     }
   }
+
   .custom-dropdown-item {
     white-space: nowrap;
   }

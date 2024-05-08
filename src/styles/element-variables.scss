@@ -9,7 +9,6 @@ $color-success: #52C41A;
 $color-warning: #FAAD14;
 $color-danger: #FA5555;
 $color-info: #909399;
-
 $--colors: (
   "primary": (
     "base": $color-primary,
@@ -29,6 +28,7 @@ $--colors: (
 );
 
 // 按需导入，重写覆盖自己所需样式
+
 @forward "element-plus/theme-chalk/src/common/var.scss" with (
   $colors: $--colors,
   $text-color: (

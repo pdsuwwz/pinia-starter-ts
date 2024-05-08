@@ -38,6 +38,7 @@ export default defineComponent({
   margin: 0 6px;
   color: #71717a;
   transition: .2s color;
+
   &:hover {
     color: #3f3f46;
   }

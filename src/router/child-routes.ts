@@ -1,4 +1,4 @@
-import { RouteRecordRaw } from 'vue-router'
+import type { RouteRecordRaw } from 'vue-router'
 
 const importModule = import.meta.glob('../modules/**/*.vue')
 const Layout = () => import('@/components/Layout/index.vue')

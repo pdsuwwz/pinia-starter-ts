@@ -1,4 +1,5 @@
-import { App, AppContext, ComponentPublicInstance, RendererElement, RendererNode, VNode, VNodeProps, createVNode, nextTick, render } from 'vue'
+import type { App, ComponentPublicInstance, VNode } from 'vue'
+import { AppContext, RendererElement, RendererNode, VNodeProps, createVNode, nextTick, render } from 'vue'
 import Modal from '@/widgets/ModalDialog/modal.vue'
 
 const extractData = (options: { renderComponent: any; }) => {
