@@ -147,29 +147,33 @@ export default {
   transition: border .3s;
   outline: none;
   cursor: pointer;
+
   &:hover {
     border: 1px solid rgba(#495164, 0.3);
   }
-  &:after {
+
+  &::after {
     content: "";
     position: absolute;
-    top: -6px;
-    left: -6px;
-    right: -6px;
-    bottom: -6px;
+    inset: -6px;
   }
+
   &.hide-border {
+
     &:hover {
       border: 1px solid transparent;
     }
   }
 }
+
 .options-menu-list {
+
   :deep() .el-dropdown-menu__item {
     line-height: 34px;
     font-size: 14px;
     white-space: nowrap;
   }
+
   .option-text {
     padding-left: 8px;
     padding-right: 15px;
@@ -179,11 +183,9 @@ export default {
 <style lang="scss">
 .global-options-menu-backdrop-mask {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   z-index: 1;
+
   &.hide {
     display: none;
   }

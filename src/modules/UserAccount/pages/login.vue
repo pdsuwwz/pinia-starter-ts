@@ -170,7 +170,7 @@ export default defineComponent({
 
         Cookie.set('token', data!.user.token)
         router
-          .replace(`/${route.params.locale || ''}`)
+          .replace(`/${ route.params.locale || '' }`)
           .then(() => {
             ElMessage.success({
               message: '登录成功'
@@ -212,20 +212,25 @@ export default defineComponent({
   background-image: url('@/assets/images/logo-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+
   .user-account-nav {
     display: flex;
     justify-content: space-between;
     color: #f0f2f5;
-    padding: 0px 16px;
-    box-shadow: 0px -3px 8px 3px #727272;
+    padding: 0 16px;
+    box-shadow: 0 -3px 8px 3px #727272;
+
     // box-shadow: 0 1px 4px 3px rgb(0 21 41 / 8%);
+
     background-color: rgba(#8d8b89, 30%);
+
     .nav-left,
     .nav-right {
       display: flex;
       height: 48px;
       align-items: center;
     }
+
     .nav-logo {
       width: 32px;
       height: 32px;
@@ -235,6 +240,7 @@ export default defineComponent({
       background-size: contain;
       background-position: center;
     }
+
     .nav-circle {
       width: 6px;
       height: 6px;
@@ -242,12 +248,14 @@ export default defineComponent({
       border-radius: 50%;
       background: #f0f2f5;
     }
+
     .nav-title {
       font-size: 18px;
       font-weight: 500;
       line-height: 25px;
     }
   }
+
   .user-account-body {
     flex: 1;
     display: flex;
@@ -256,9 +264,11 @@ export default defineComponent({
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (width <= 600px) {
+
   .user-account-container-layout {
     justify-content: center;
+
     .user-account-nav {
       left: 0;
       right: 0;

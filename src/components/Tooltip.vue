@@ -44,9 +44,9 @@ export default defineComponent({
   max-width: 400px;
   max-height: 50px;
   line-height: 18px;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden auto;
   font-size: 14px;
+
   &::-webkit-scrollbar-thumb {
     background: rgba(#fff, 0.4);
     border-radius: 3px;
@@ -61,9 +61,11 @@ export default defineComponent({
   border-radius: 4px !important;
   padding-top: 6px !important;
   padding-bottom: 6px !important;
+
   .el-popper__arrow {
     height: 14px;
-    &:before {
+
+    &::before {
       background-color: #0b1a2f !important;
     }
   }

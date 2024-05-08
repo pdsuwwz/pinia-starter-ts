@@ -16,7 +16,7 @@ router.beforeEach(async (to, from, next) => {
 
   NProgress.start()
 
-  document.title = `${to.meta.title || ''} - ${systemTitle}`
+  document.title = `${ to.meta.title || '' } - ${ systemTitle }`
 
   console.log('😄😄😄 ', to)
 
@@ -32,7 +32,7 @@ router.beforeEach(async (to, from, next) => {
   }
 
   if (!Cookie.get('token')) {
-    next(`/${currentRouteLocale || userAccountStore.locale}/user/login`)
+    next(`/${ currentRouteLocale || userAccountStore.locale }/user/login`)
     return
   }
 
@@ -44,7 +44,7 @@ router.beforeEach(async (to, from, next) => {
       locale: currentRouteLocale || userAccountStore.locale
     })
     Cookie.remove('token')
-    next(`/${currentRouteLocale || userAccountStore.locale}/user/login`)
+    next(`/${ currentRouteLocale || userAccountStore.locale }/user/login`)
     return
   }
 

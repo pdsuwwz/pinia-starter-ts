@@ -50,11 +50,14 @@ export default defineComponent({
 .footer {
   margin: 0 auto;
   width: 100%;
+
   &.border {
     border-top: 1px solid rgba(#3c3c43, .12);
   }
+
   .container {
-    padding: 14px 0 14px;
+    padding: 14px 0;
+
     .text {
       display: flex;
       justify-content: center;
@@ -68,11 +71,13 @@ export default defineComponent({
     }
   }
 }
+
 .github-link {
   color: #555;
   border-bottom: 1px solid rgba(#7d7d7d, .3);
   transition: border .3s ease-in-out;
   margin-left: 6px;
+
   &:hover {
     border-color: #7d7d7d;
   }

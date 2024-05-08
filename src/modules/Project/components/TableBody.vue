@@ -46,28 +46,29 @@ export default defineComponent({
 .project-table-body-container {
   position: relative;
   flex: auto;
+
   .project-table-body-container__inner {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    inset: 0;
+    overflow: hidden scroll;
     padding: 10px 6px 0;
     scroll-behavior: smooth;
+
     &::-webkit-scrollbar-track {
       background: transparent;
     }
+
     .project-empty-box {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       padding-top: 171px;
+
       & > img {
         width: 140px;
       }
+
       & > span {
         font-size: 14px;
         line-height: 14px;
