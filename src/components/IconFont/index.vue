@@ -82,13 +82,16 @@ export default defineComponent({
     })
 
     const handleClick = () => {
-      !props.disabled && emit('click')
+      if (!props.disabled) {
+        emit('click')
+      }
     }
 
     const getAttrs = () => {
       const attrs: any = {}
-      props.shadow &&
-      (attrs.filter = 'url(#drop-shadow)')
+      if (props.shadow) {
+        attrs.filter = 'url(#drop-shadow)'
+      }
       return attrs
     }
     return {
@@ -103,7 +106,8 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .icon-font {
-  width: 1em; height: 1em;
+  width: 1em;
+  height: 1em;
   vertical-align: -0.15em;
   fill: currentcolor;
   overflow: hidden;
