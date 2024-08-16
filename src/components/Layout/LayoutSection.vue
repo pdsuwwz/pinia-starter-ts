@@ -32,27 +32,28 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 
 /**
  * 上下布局，顶部 header 大标题 + 底部内容区域
  */
-export default defineComponent({
-  name: 'LayoutSection',
-  props: {
-    hasDivider: {
-      type: Boolean,
-      default: false
-    },
-    flexContent: {
-      type: Boolean,
-      default: false
-    },
-    title: {
-      type: String,
-      default: ''
-    }
+
+defineOptions({
+  name: 'LayoutSection'
+})
+
+defineProps({
+  hasDivider: {
+    type: Boolean,
+    default: false
+  },
+  flexContent: {
+    type: Boolean,
+    default: false
+  },
+  title: {
+    type: String,
+    default: ''
   }
 })
 </script>
